@@ -53,6 +53,7 @@ sequence start
 number of NLB pairs to create
 # Create two pairs of NLB's in subnet-99999999
 `[user@workstation aws_devops]$ ./scripts/nlb-create.sh example subnet-999999 1 2`
+
 Creating 1 pair(s) of NLB's in subnet 10.1.1.18.0/24
 Do you want to continue (Ctrl-C to abort)?
 Creating example-nlb-9-be93-api
@@ -62,12 +63,13 @@ Created example-nlb-9-be93-app => example-nlb-9-be93-app-5c488c5cd32128ea.elb.us
 
 # Existing NLB's can be listed using the nlb-list.sh command
 `[ecsaws@sd-9277-023a aws_devops]$ ./scripts/nlb-list.sh`
+
 us-east-1a example-nlb-9-be93-api 10.1.1.219 example-nlb-9-be93-api-c744cf87a6b40d0b.elb.us-east-1.amazonaws.com
 us-east-1a example-nlb-9-be93-app 10.1.1.194 example-nlb-9-be93-app-5c488c5cd32128ea.elb.us-east-1.amazonaws.com
 us-east-1a sandbox-nlb-1-b6cf-api 10.1.1.134 sandbox-nlb-1-b6cf-api-d877e2b487245964.elb.us-east-1.amazonaws.com
 us-east-1a sandbox-nlb-1-b6cf-app 10.1.1.158 sandbox-nlb-1-b6cf-app-f2b9675aac6f172f.elb.us-east-1.amazonaws.com
-Columns are:
 
+Columns are:
 Availability zone
 NLB Name - Names ending in api are for masters, Names ending in app are for applications
 IP address
