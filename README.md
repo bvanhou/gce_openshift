@@ -1,9 +1,9 @@
-GCE OpenShift Deployment Automation
+# GCE OpenShift Deployment Automation
 This repository contains playbooks used to automatically deploy and configure OpenShift clusters into AWS
 
-!IMPORTANT: Make sure all variables are set and configured as needed before playbooks are run.
+###### !IMPORTANT: Make sure all variables are set and configured as needed before playbooks are run.
 
-Architecture
+# Architecture
 TODO: Architecture Diagram
 
 Prerequisites
